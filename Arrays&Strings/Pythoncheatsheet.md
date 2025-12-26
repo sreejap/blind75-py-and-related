@@ -1,3 +1,4 @@
+## Arrays
 # initialize
 arr = [0] * 5          # [0,0,0,0,0]
 arr = [1,2,3,4,5]
@@ -19,3 +20,22 @@ len(arr)
 arr.sort()
 arr.reverse()
 sum(arr)
+
+
+## Strings
+s = "hello"
+
+# access
+s[0], s[-1]
+
+# substring
+s[1:4], s[:3]
+
+# operations
+len(s)
+s.lower(), s.upper()
+s.split(), s.split(',')
+' '.join(['a','b','c'])
+s.replace('h','j')
+s.find('e')
+s.startswith('he'), s.endswith('lo')
