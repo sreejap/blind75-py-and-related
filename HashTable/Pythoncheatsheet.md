@@ -1,3 +1,4 @@
+# init
 d = {}               # empty dict
 d = {'a':1, 'b':2}
 
