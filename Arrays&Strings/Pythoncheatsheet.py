@@ -4,7 +4,8 @@ arr = [0] * 5          # [0,0,0,0,0]
 arr = [1,2,3,4,5]
 
 # access
-arr[0], arr[-1]
+arr[0] - first element
+arr[-1] - last element in array
 
 # slice
 arr[1:4], arr[:3], arr[2:]
