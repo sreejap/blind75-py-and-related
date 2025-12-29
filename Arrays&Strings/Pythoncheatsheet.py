@@ -11,7 +11,7 @@ arr[-1] - last element in array
 arr[1:4], arr[:3], arr[2:]
 
 # operations
-arr.append(6)
+arr.append(6) # it adds the value 6 to the end of the array (list), regardless of the current length of the list.
 arr.insert(2, 10) #  inserts the value 10 at index 2 of the list arr, 0 based index
 arr.pop() # Removes and returns the last element
 arr.pop(1) # Removes and returns the element at index 1
