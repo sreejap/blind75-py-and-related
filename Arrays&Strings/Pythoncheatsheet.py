@@ -12,11 +12,11 @@ arr[1:4], arr[:3], arr[2:]
 
 # operations
 arr.append(6)
-arr.insert(2, 10)
-arr.pop()
-arr.pop(1)
-arr.remove(3)
-arr.index(4)
+arr.insert(2, 10) #  inserts the value 10 at index 2 of the list arr, 0 based index
+arr.pop() # Removes and returns the last element
+arr.pop(1) # Removes and returns the element at index 1
+arr.remove(3) # Removes the first occurrence of value 3
+arr.index(4) # Returns the index of the first occurrence of 4
 len(arr)
 arr.sort()
 arr.reverse()
