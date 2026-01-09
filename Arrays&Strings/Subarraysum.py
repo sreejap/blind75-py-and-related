@@ -1,3 +1,4 @@
+# https://algo.monster/problems/subarray_sum_fixed
 def subarray_sum_fixed(nums: list[int], k: int) -> int:
     left = 0
     right = 0
