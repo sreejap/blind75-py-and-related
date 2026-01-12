@@ -1,13 +1,8 @@
-def range_sum_query_immutable(nums: list[int], left: int, right: int) -> int:
-    prefix_sum = [0]
-    for n in nums:
-        prefix_sum.append(prefix_sum[-1]+n)
-    
-    return prefix_sum [right+1] - prefix_sum[left]
+from itertools import accumulate
 
-if __name__ == "__main__":
-    nums = [int(x) for x in input().split()]
-    left = int(input())
-    right = int(input())
-    res = range_sum_query_immutable(nums, left, right)
-    print(res)
+class NumArray:
+    def __init__(self, nums: list[int]):
+        self.prefix = list(accumulate(nums, initial=0))
+
+    def sumRange(self, left: int, right: int) -> int:
+        return self.prefix[right + 1] - self.prefix[left]
