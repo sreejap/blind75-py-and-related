@@ -18,6 +18,13 @@ def preorder(root):
     preorder(root.left)
     preorder(root.right)
 
+#post order traversal
+def post_order_traversal(root: Node):
+    if root is not None:
+        post_order_traversal(root.left)
+        post_order_traversal(root.right)
+        print(root.val)
+
 # BFS
 from collections import deque
 def bfs(root):
