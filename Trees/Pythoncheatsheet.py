@@ -4,6 +4,13 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# inorder traversal
+def in_order_traversal(root: Node) -> None:
+    if root is not None:
+        in_order_traversal(root.left)
+        print(root.val)
+        in_order_traversal(root.right)
+        
 # DFS
 def preorder(root):
     if not root: return
