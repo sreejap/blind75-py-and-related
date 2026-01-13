@@ -3,10 +3,9 @@ class Node:
         self.val = val
         self.next = next
 
-def has_cycle(nodes: Node) -> bool:
-    dummy = Node(0,nodes)
-    slow = dummy
-    fast = dummy
+def has_cycle(nodes: Node) -> bool:    
+    slow = nodes
+    fast = nodes
 
     while fast and fast.next:
         slow = slow.next
