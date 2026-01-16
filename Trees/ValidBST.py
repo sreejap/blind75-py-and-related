@@ -6,11 +6,10 @@ class Node:
         self.right = right
 
 def valid_bst(root: Node) -> bool:
-    def dfs (root, min_val, max_val):        
+    def dfs (root, min_val, max_val):
         if not root:
             return True
-        if root.val <= min_val or root.val >= max_val:
+        if not min_val < root.val < max_val:
             return False
-        return dfs (root.left,min_val,root.val) and dfs (root.right,root.val, max_val)
-
-    return dfs(root, -inf, inf)
+        return dfs (root.left, min_val, root.val) and dfs(root.right, root.val, max_val)
+    return dfs (root, -inf, inf)
