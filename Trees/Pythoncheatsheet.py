@@ -4,6 +4,13 @@ class TreeNode:
         self.left = None
         self.right = None
 
+For n-nary trees:
+
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.children = []
+
 # inorder traversal
 def in_order_traversal(root: Node) -> None:
     if root is not None:
